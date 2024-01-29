@@ -284,9 +284,7 @@ namespace dials { namespace algorithms { namespace boost_python {
       .def("index", &GroupList::Group::index)
       .def("nindex", &GroupList::Group::nindex)
       .def("expr", &GroupList::Group::expr)
-      .def("nexpr", &GroupList::Group::nexpr)
-      .def("frames", &GroupList::Group::frames)
-      .def("nframes", &GroupList::Group::nframes);
+      .def("frames", &GroupList::Group::frames);
 
     class_<GroupList>("GroupList")
       .def("__len__", &GroupList::size)

@@ -67,16 +67,6 @@ namespace dials { namespace algorithms {
         return index_[1] - index_[0];
       }
 
-      /** @returns The number of experiments which this group covers */
-      std::size_t nexpr() const {
-        return expr_[1] - expr_[0];
-      }
-
-      /** @returns The number of frames which this group covers */
-      std::size_t nframes() const {
-        return frames_[1] - frames_[0];
-      }
-
     private:
       tiny<int, 2> index_;
       tiny<int, 2> expr_;
