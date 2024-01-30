@@ -30,8 +30,7 @@ namespace dials { namespace algorithms { namespace boost_python {
     class_<Centroider>("Centroider")
       .def("add", &add_detector)
       .def("add", &add_detector_and_scan)
-      .def("__call__", &Centroider::shoebox)
-      .def("__call__", &Centroider::volume<float>);
+      .def("__call__", &Centroider::shoebox);
   }
 
 }}}  // namespace dials::algorithms::boost_python
